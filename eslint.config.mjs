@@ -2,7 +2,7 @@
 import globals from 'globals'
 import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
-import prettier from 'eslint-plugin-prettier'
+// import prettier from 'eslint-plugin-prettier'
 
 export default [
   { files: ['**/*.{js,mjs,cjs,ts}'] },
@@ -17,7 +17,7 @@ export default [
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-  prettier.configs.recommended,
+  // prettier.configs.recommended,
 
   {
     rules: {
